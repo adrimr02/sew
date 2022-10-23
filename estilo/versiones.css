@@ -1,0 +1,15 @@
+/****************
+ * Adrian Martinez Rodriguez - UO284163
+ * Estilos especificos para la pagina sobre las versiones
+ * de Node y mas en concreto para la tabla de versiones
+ *****************/
+
+main {
+  width: 90vw;
+  overflow-x: hidden;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+}

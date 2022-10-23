@@ -7,10 +7,9 @@
 body {
   display: grid;
   grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer"
+    "header nav nav"
+    "main main main"
+    "footer footer footer"
   ;
 }
 
@@ -27,6 +26,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-height: 10vh;
   height: fit-content;
 }
 
@@ -38,7 +38,16 @@ footer {
   grid-area: footer;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
+  body {
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer"
+    ;
+  }
+
   nav {
     flex-direction: column;
   }

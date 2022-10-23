@@ -2,3 +2,25 @@
  * Adrian Martinez Rodriguez - UO284163
  * Estilos especificos para el formulario de comentarios
  *****************/
+
+input, textarea {
+  width: 90%;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+input[type=radio] {
+  width: fit-content;
+  font-size: 1em;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 0.3em;
+
+}
