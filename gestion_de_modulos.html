@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name ="author" content ="Adrian Martinez Rodriguez" />
+  <meta name ="description" content ="En esta pagina se explican los diferentes modulos de Node.js y como se gestionan modulos externos" />
+  <meta name ="keywords" content ="node.js, javascript, servidores, modulos, npm" />
+
+  <title>Node.js - Modulos y Paquetes</title>
+  <link rel="shortcut icon" href="multimedia/node_icono.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+  <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+  </head>
+<body>
+  <header>
+    <h1>Node.js</h1>
+    <figure>
+      <img src="/multimedia/node_icono.jpg" alt="Node.js logo">
+    </figure>
+  </header>
+  <nav>
+    <a href="/index.html" accesskey="I" tabindex="1">Inicio</a>
+    <a href="/gestion_de_modulos.html" accesskey="M" tabindex="2">Modulos</a>
+    <a href="/versiones.html" accesskey="V" tabindex="3">Versiones</a>
+    <a href="/instalacion.html" accesskey="N" tabindex="4">Instalación</a>
+    <a href="/comentarios.html" accesskey="C" tabindex="5">Comentarios</a>
+  </nav>
+  <main>
+    <h2>Caracteristicas de Node.js</h2>
+    <section>
+      <h3>Sistema de paquetes de Node</h3>
+      <p>
+        Las principales funcionalidades de Node vienen recogidas en varios modulos que pueden ser
+        importados cuando se necesiten (mas adelante se veran los mas importantes) y que ya vienen instalados
+        por defecto. Sin embargo, muchas veces es necesaria cierta funcionalidad que seria muy dificil implementar
+        desde cero, por lo que se pueden importar modulos nuevos usando el gestor de paquetes <i>npm</i>.
+      </p>
+      <p>
+        <i>Npm</i> se instala automaticamente al instalar Node y es una herramienta que se utiliza desde la consola.
+        Aunque su nombre indica que es un gestor de paquetes, realmente hace mucho mas, ya que permite, entre muchas 
+        otras cosas, crear comandos, guardar la configuracion de los proyectos y añadir o importar ejecutables creados 
+        con Node para realizar una tarea dentro del propio proyecto, como la generación automatica de código.
+      </p>
+    </section>
+    <section>
+      <h3>Modulos incluidos con Node</h3>
+      <p>
+        La lista de modulos que trae Node por defecto es bastante larga, pero a continuación están los mas importantes:
+      </p>
+      <dl>
+        <dt>fs</dt>
+        <dd>Permite utilizar el sistema de archivos de la maquina. Leer y crear archivos, carpetas, etc</dd>
+        <dt>http</dt>
+        <dd>
+          Permite utilizar Node.js como un servidor HTTP. Tambien existe el modulo HTTPS que es similar pero con 
+          la seguridad extra
+        </dd>
+        <dt>crypto</dt>
+        <dd>
+          Añade la funcionalidad para encriptar informacion o para crear claves hash, entre otras muchas cosas relacionadas
+        </dd>
+        <dt>path</dt>
+        <dd>
+          Se utiliza principalmente para crear direcciones a archivos relativas al proyecto de node, y que sean independiente 
+          a donde se encuentre este proyecto. Aunque tiene otras funciones relacionadas con el manejo de direcciones de 
+          archivos dentro del sistema.
+        </dd>
+        <dt>os</dt>
+        <dd>
+          Se usa sobretodo para conseguir informacion sobre el sistema en el que se ejecuta el programa. Infomacion
+          sobre la arquitectura, el numero de CPUs, el nombre y version del sistema operativo, entre otras.
+        </dd>
+        <dt>buffer</dt>
+        <dd>
+          Se utiliza para almacenar y procesar flujos de datos binarios, o para convertir otros datos en datos binarios o 
+          viceversa. Es de gran utilidad para mover cantidades grandes de datos.
+        </dd>
+        <dt>cluster</dt>
+        <dd>
+          Es el modulo que se utiliza para dividir un proceso de Node en varios subprocesos que se ejecuten simultaneamente
+          utilizando distintas CPUs.
+        </dd>
+      </dl>
+      <p>
+        En <a href="https://www.w3schools.com/nodejs/ref_modules.asp" target="_blank">esta página</a> puedes ver la lista completa de módulos.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Pagina web creada por Adrián Martínez Rodríguez
+      para la asignatura SEW del Grado en Ingeniería Informática del Software.
+    </p>
+    <p>
+      Información obtenidad de <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">wikipedia.com</a>, <a href="https://www.w3schools.com/nodejs/" target="_blank">w3schools.com</a> y la <a href="https://nodejs.org/en/" target="_blank">web oficial de Node.js</a>.
+    </p>
+  </footer>
+</body>
+</html>

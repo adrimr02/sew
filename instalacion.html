@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name ="author" content ="Adrian Martinez Rodriguez" />
+  <meta name ="description" content ="En esta pagina se explica como instalar Node.js y ejecutar un programa básico" />
+  <meta name ="keywords" content ="node.js, instalacion, windows, linux, macosx" />
+
+  <title>Node.js - Instalar y Ejecutar</title>
+  <link rel="shortcut icon" href="multimedia/node_icono.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+  <link rel="stylesheet" type="text/css" href="estilo/layout.css">  
+</head>
+<body>
+  <header>
+    <h1>Node.js</h1>
+    <figure>
+      <img src="/multimedia/node_icono.jpg" alt="Node.js logo">
+    </figure>
+  </header>
+  <nav>
+    <a href="/index.html" accesskey="I" tabindex="1">Inicio</a>
+    <a href="/gestion_de_modulos.html" accesskey="M" tabindex="2">Modulos</a>
+    <a href="/versiones.html" accesskey="V" tabindex="3">Versiones</a>
+    <a href="/instalacion.html" accesskey="N" tabindex="4">Instalación</a>
+    <a href="/comentarios.html" accesskey="C" tabindex="5">Comentarios</a>
+  </nav>
+  <main>
+    <h2>Como instalar y ejecutar Node.js</h2>
+    <section>
+      <h3>Como instalar</h3>
+      <p>
+        El primer paso es descargar el instalador desde la <a href="https://nodejs.org/es/">página oficial</a>,
+        eligiendo la mejor opción segun nuestro sistema operativo y su versión. Una vez descargado, abrimos el 
+        instalador y damos a continuar, aceptamos las condiciones y continuamos. A continuación nos da la opción
+        de cambiar la carpeta de instalación si queremos, y posteriormente a escoger que caracteristicas queremos 
+        instalar. En la mayoría de casos se puede dejar por defecto sin ningún problema. Por ultimo pulsamos instalar,
+        y aceptamos la petición de permisos que lanzara el sistema operativo, si estamos en Windows. Con esto, Node.js
+        ya está instalado en nuestra máquina.
+      </p>
+    </section>
+    <section>
+      <h3>El primer "Hola, mundo!"</h3>
+      <h4>Crear el ejecutable</h4>
+      <p>
+        Para crear un programa, necesitaremos un editor de texto plano, preferiblemente un editor de codigo.
+        Empezamos creando un archivo del nombre que sea, pero acabado en .js, p. ej. holaMundo.js. Una vez
+        lo tengamos abierto en el editor escribiremos el siguiente codigo:
+      </p>
+      <code>
+        console.log("Hola, mundo!")
+      </code>
+      <h4>Ejecutar el código</h4>
+      <p>
+        Guardamos, y abrimos una terminal en el directorio en el que esté el archivo. Para ejecutarlo simplemente
+        tenemos que ejecutar el siquiente comando:
+      </p>
+      <code>
+        node holaMundo.js 
+      </code>
+      <p>
+        Si todo va bien, deberiamos ver 'Hola, mundo!' en la terminal.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Pagina web creada por Adrián Martínez Rodríguez
+      para la asignatura SEW del Grado en Ingeniería Informática del Software.
+    </p>
+    <p>
+      Información obtenidad de <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">wikipedia.com</a>, <a href="https://www.w3schools.com/nodejs/" target="_blank">w3schools.com</a> y la <a href="https://nodejs.org/en/" target="_blank">web oficial de Node.js</a>.
+    </p>
+  </footer>
+</body>
+</html>

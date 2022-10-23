@@ -1,0 +1,34 @@
+body {
+  background-color: #121212;
+}
+
+header {
+  background-color: #252525;
+}
+
+nav {
+  background-color: #252525;
+  color: #d8d8d8;
+  
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #d8d8d8;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  background-color: #DDD;
+  color: black;
+}
+
+footer {
+  background-color: rgb(4, 5, 95);
+}

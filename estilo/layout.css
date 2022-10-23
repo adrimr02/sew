@@ -1,0 +1,45 @@
+/****************
+ * Adrian Martinez Rodriguez - UO284163
+ * Hoja de estilos con el layout general
+ * para toda la pagina
+ *****************/
+
+body {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+  ;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media only screen and (max-width:500px) {
+  nav {
+    flex-direction: column;
+  }
+}

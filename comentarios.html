@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name ="author" content ="Adrian Martinez Rodriguez" />
+  <meta name ="description" content ="En esta pagina esta el formulario en el que añadir comentarios o sugerencias" />
+  <meta name ="keywords" content ="node.js, comentarios, sugerencias" />
+
+  <title>Node.js - Modulos y Paquetes</title>
+  <link rel="shortcut icon" href="multimedia/node_icono.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+  <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+</head>
+<body>
+  <header>
+    <h1>Node.js</h1>
+    <figure>
+      <img src="/multimedia/node_icono.jpg" alt="Node.js logo">
+    </figure>
+  </header>
+  <nav>
+    <a href="/index.html" accesskey="I" tabindex="1">Inicio</a>
+    <a href="/gestion_de_modulos.html" accesskey="M" tabindex="2">Modulos</a>
+    <a href="/versiones.html" accesskey="V" tabindex="3">Versiones</a>
+    <a href="/instalacion.html" accesskey="N" tabindex="4">Instalación</a>
+    <a href="/comentarios.html" accesskey="C" tabindex="5">Comentarios</a>
+  </nav>
+  <main>
+    <h2>Comentarios y sugerencias</h2>
+    <p>
+      Si crees que hay algo que debemos cambiar en nuestra página, no dudes en hacernoslo llegar rellenando el siguiente formulario
+    </p>
+    <form>
+        <p>
+          <label for="name">Nombre: <input type="text" id="name" name="full-name" required></label>
+        </p>
+        <p>
+          <label for="email">Correo electronico: <input type="email" id="email" name="email" required></label>
+        </p>
+        <fieldset>
+          <legend>Tipo de comentario:</legend>
+          <p>
+            <label for="complaint"><input type="radio" id="complaint" name="type">Queja</label>
+          </p>
+          <p>
+            <label for="error-report"><input type="radio" id="error-report" name="type">Error encontrado</label>
+          </p>
+          <p>
+            <label for="sugestion"><input type="radio" id="sugestion" name="type">Sugerencia</label>
+          </p>
+        </fieldset>
+        <p>
+          <label for="comment">Comentario: <textarea name="coment" id="comment" cols="60" rows="10" required></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+    </form>
+  </main>
+  <footer>
+    <p>
+      Pagina web creada por Adrián Martínez Rodríguez
+      para la asignatura SEW del Grado en Ingeniería Informática del Software.
+    </p>
+    <p>
+      Información obtenidad de <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank">wikipedia.com</a>, <a href="https://www.w3schools.com/nodejs/" target="_blank">w3schools.com</a> y la <a href="https://nodejs.org/en/" target="_blank">web oficial de Node.js</a>.
+    </p>
+  </footer>
+</body>
+</html>
