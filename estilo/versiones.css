@@ -4,11 +4,12 @@
  * de Node y mas en concreto para la tabla de versiones
  *****************/
 
+/* a=0 b=0 c=1 -> specificity = 1 */
 main {
-  width: 90vw;
   overflow-x: hidden;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1 */
 table {
   /* 
    * Necesario para permitir el desplazamiento lateral de la tabla en pantallas pequeñas sin que 
@@ -18,10 +19,12 @@ table {
   overflow-x: auto;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1 */
 th, td {
   padding: 0.5em;
 }
 
+/* a=0 b=1 c=1 -> specificity = 11 */
 tr:nth-child(even) {
   background-color: #ececec;
 }
