@@ -12,6 +12,8 @@ body {
 
 header {
   background-color: #252525;
+  padding: 0.2em;
+  max-height: 10vh;
 }
 
 
@@ -30,6 +32,8 @@ header img {
 nav {
   background-color: #252525;
   color: #d8d8d8;
+  padding: 0.2em;
+  max-height: 10vh;
 }
 
 a {
