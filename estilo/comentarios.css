@@ -3,6 +3,7 @@
  * Estilos especificos para el formulario de comentarios
  *****************/
 
+ /* a=0 b=0 c=1 -> specificity = 1 */
 input, textarea, fieldset {
   width: 90%;
   border-radius: 0.3em;
@@ -10,20 +11,18 @@ input, textarea, fieldset {
   font-size: 0.8em;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1 */
 fieldset {
   display: flex;
   flex-direction: column;
 }
 
-input[type=radio] {
-  width: fit-content;
-  font-size: 1em;
-}
-
+/* a=0 b=0 c=1 -> specificity = 1 */
 textarea {
   resize: vertical;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1 */
 button {
   border-radius: 0.3em;
   font-size: 1em;
@@ -33,12 +32,20 @@ button {
   border: #027c00 solid;
 }
 
+/* a=0 b=1 c=1 -> specificity = 11 */
 button:hover {
   background-color: #027c00;
   color: white;
 }
 
+/* a=0 b=1 c=1 -> specificity = 11 */
 button:active {
   color: white;
   background: #065a04;
+}
+
+/* a=0 b=1 c=1 -> specificity = 11 */
+input[type=radio] {
+  width: fit-content;
+  font-size: 1em;
 }

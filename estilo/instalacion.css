@@ -4,18 +4,20 @@
  * proceso de instalacion de Node
  *****************/
 
- video {
+/* a=0 b=0 c=1 -> specificity = 1 */
+video {
   max-width: 100%;
   height: auto;
- }
+}
 
- code {
+/* a=0 b=0 c=1 -> specificity = 1 */
+code {
   border-radius: 0.5em;
   width: 100%;
   padding: 1em;
   font-size: 0.75em;
   background-color: #2b2b2b;
   color: white;
- }
+}
 
  

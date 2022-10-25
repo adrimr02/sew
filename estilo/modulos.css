@@ -4,11 +4,13 @@
  * diferentes modulos de Node
  *****************/
 
- dt {
+/* a=0 b=0 c=1 -> specificity = 1 */
+dt {
   font-weight: bold;
- }
+}
 
- dd {
+/* a=0 b=0 c=1 -> specificity = 1 */
+dd {
   margin: 0 0 0 0.5em;
   padding: 0.1em;
- }
+}

@@ -3,10 +3,12 @@
  * Estilos generales para la página de inicio
  *****************/
 
- figcaption {
+/* a=0 b=0 c=1 -> specificity = 1 */
+figcaption {
   font-size: 0.8em;
- }
+}
 
- audio {
+/* a=0 b=0 c=1 -> specificity = 1 */
+audio {
   width: 100%;
- }
+}
