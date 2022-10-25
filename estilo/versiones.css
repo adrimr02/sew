@@ -10,7 +10,11 @@ main {
 }
 
 table {
-  display: block;
+  /* 
+   * Necesario para permitir el desplazamiento lateral de la tabla en pantallas pequeñas sin que 
+   * salte un error de adaptabilidad
+   */
+  display: block; 
   overflow-x: auto;
 }
 
