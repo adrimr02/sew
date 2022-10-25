@@ -1,0 +1,21 @@
+/****************
+ * Adrian Martinez Rodriguez - UO284163
+ * Estilos especificos para la pagina sobre el
+ * proceso de instalacion de Node
+ *****************/
+
+ video {
+  max-width: 100%;
+  height: auto;
+ }
+
+ code {
+  border-radius: 0.5em;
+  width: 100%;
+  padding: 1em;
+  font-size: 0.75em;
+  background-color: #2b2b2b;
+  color: white;
+ }
+
+ 

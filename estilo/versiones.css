@@ -13,3 +13,11 @@ table {
   display: block;
   overflow-x: auto;
 }
+
+th, td {
+  padding: 0.5em;
+}
+
+tr:nth-child(even) {
+  background-color: #ececec;
+}
