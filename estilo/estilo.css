@@ -70,3 +70,8 @@ nav a {
 nav a:hover {
   color: #fff;
 }
+
+/* a=0 b=0 c=2 -> specificity = 2 */
+main a {
+  color: #181818;
+}
