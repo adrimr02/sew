@@ -6,14 +6,13 @@
 /* a=0 b=0 c=1 -> specificity = 1 */
 body {
   margin: 0;
-  background-color: #fff;
   font-size: 2em;
-  color: white;
 }
 
 /* a=0 b=0 c=1 -> specificity = 1 */
 header {
   background-color: #252525;
+  color: #fff;
   padding: 0.2em;
   max-height: 10vh;
 }
@@ -34,13 +33,13 @@ header img {
 /* a=0 b=0 c=1 -> specificity = 1 */
 nav {
   background-color: #252525;
+  color: #fff;
   padding: 0.2em;
   max-height: 10vh;
 }
 
 /* a=0 b=0 c=1 -> specificity = 1 */
 main {
-  color: #181818;
   margin: 0.5em;
   padding: 0.5em;
   border-radius: 0.2em;
@@ -49,29 +48,27 @@ main {
 /* a=0 b=0 c=1 -> specificity = 1 */
 footer {
   background-color: #252525;
-  padding: 0.7em;
-}
-
-/* a=0 b=0 c=1 -> specificity = 1 */
-a {
   color: #fff;
-  text-decoration: underline;
+  padding: 0.7em;
 }
 
 /* a=0 b=0 c=2 -> specificity = 2 */
 nav a {
-  color: #eeeeee;
+  color: #eee;
   padding: 1rem;
   text-decoration: none;
   height: 100%;
 }
 
-/* a=0 b=1 c=2 -> specificity = 12 */
-nav a:hover {
+main a {
+  color: #121212;
+}
+
+footer a {
   color: #fff;
 }
 
-/* a=0 b=0 c=2 -> specificity = 2 */
-main a {
-  color: #181818;
+/* a=0 b=1 c=2 -> specificity = 12 */
+nav a:hover {
+  color: #fff;
 }

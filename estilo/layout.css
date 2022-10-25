@@ -8,9 +8,10 @@
 body {
   display: grid;
   grid-template-areas: 
-    "header nav nav"
-    "main main main"
-    "footer footer footer"
+    "header"
+    "nav"
+    "main"
+    "footer"
   ;
 }
 
@@ -44,15 +45,6 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    grid-template-areas: 
-      "header"
-      "nav"
-      "main"
-      "footer"
-    ;
-  }
-
   nav {
     flex-direction: column;
     max-height: fit-content;
