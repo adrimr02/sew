@@ -1,0 +1,58 @@
+main {
+  font-size: 1.5em;
+
+}
+
+article {
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  background-color: #fefefe;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  margin: 1em;
+  border-radius: 0.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 90%;
+  }
+}
