@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background: #f0f0f0;
+  color: black;
+  padding: 2em 1em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: 
+    "h h h h h h"
+    "lop op op op op op"  
+    "lin in in in in in"
+    "deg hyp fe . . ."
+    "mc mr mp mm ms ."
+  ;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+section:first-child h2 {
+  grid-area: h;
+}
+
+section:last-child h2 {
+  grid-column: span 5;
+}
+
+label[for=operacion] {
+  grid-area: lop;
+}
+
+label[for=input] {
+  grid-area: lin;
+}
+input[name="operacion"] {
+  grid-area: op;
+}
+
+input[name="input"] {
+  grid-area: in;
+}
+
+input[value="DEG"], input[value="RAD"] {
+  grid-area: deg;
+}
+
+input[value="HYP"] {
+  grid-area: hyp;
+}
+
+input[value="F-E"] {
+  grid-area: fe ;
+}
+
+input[value="MC"] {
+  grid-area: mc;
+}
+
+input[value="MR"] {
+  grid-area: mr;
+}
+input[value="M+"] {
+  grid-area: mp;
+}
+input[value="M-"] {
+  grid-area: mm;
+}
+input[value="MS"] {
+  grid-area: ms;
+}
+
+section:last-child {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: none;
+  gap: 0.2em;
+  padding: 0.5em;
+}
+
+label {
+  font-size: 1em;
+  text-align: right;
+}
+
+input {
+  font-size: 1.2em;
+}
+
+input[type=text] {
+  grid-column: span 6;
+  background: white;
+  color: black;
+  text-align: right;
+}
+
+input[type=button] {
+  border: 0.05em solid rgba(0,0,0,0);
+}
+
+input[type=button]:hover {
+  background: #cacaca;
+  border: 0.05em solid #939393;
+  color: black;
+}
+
+input[value="="] {
+  background-color: #92c2e8;
+  border: 0.05em solid rgba(0,0,0,0);
+  color: black;
+}
+
+input[value="="]:hover {
+  background-color: #499ddf;
+  border: 0.05em solid #0d3a7e;
+  color: black;
+}

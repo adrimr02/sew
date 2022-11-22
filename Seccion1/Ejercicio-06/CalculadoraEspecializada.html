@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Imitacion de una calculadora Milan hecha con JavaScript vanilla">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <title>Calculadora Especializada</title>
+  <link rel="stylesheet" href="/sew/Seccion1/Ejercicio-06/CalculadoraEspecializada.css">
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Calculadora Especializada</h1>
+      <input type="text" name="opciones" disabled>
+      <textarea name="pila" id="pila" cols="30" rows="10" readonly></textarea>
+      <input type="button" value="Sym" onclick="calculadora.sym()">
+      <input type="text" name="entrada" disabled>
+      <input type="button" value="x" onclick="calculadora.x()">
+      <input type="button" value="d/dx" onclick="calculadora.derivar()">
+      <input type="button" value="∫" onclick="calculadora.integrar()">
+      <input type="button" value="Solve" onclick="calculadora.resolver()">
+      <input type="button" value="Simp" onclick="calculadora.simplificar()">
+      <input type="button" value="Sin" onclick="calculadora.sin()">
+      <input type="button" value="Cos" onclick="calculadora.cos()">
+      <input type="button" value="Tan" onclick="calculadora.tan()">
+      <input type="button" value="e^x" onclick="calculadora.potenciaDeE()">
+      <input type="button" value="√" onclick="calculadora.raiz()">
+      <input type="button" value="ArcSin" onclick="calculadora.arcsin()">
+      <input type="button" value="ArcCos" onclick="calculadora.arccos()">
+      <input type="button" value="ArcTan" onclick="calculadora.arctan()">
+      <input type="button" value="x^2" onclick="calculadora.cuadrado()">
+      <input type="button" value="x^y" onclick="calculadora.potenciaDe()">
+      <input type="button" value="7" onclick="calculadora.digitos(7)">
+      <input type="button" value="8" onclick="calculadora.digitos(8)">
+      <input type="button" value="9" onclick="calculadora.digitos(9)">
+      <input type="button" value="DEL" onclick="calculadora.borrar()">
+      <input type="button" value="AC" onclick="calculadora.reset()">
+      <input type="button" value="4" onclick="calculadora.digitos(4)">
+      <input type="button" value="5" onclick="calculadora.digitos(5)">
+      <input type="button" value="6" onclick="calculadora.digitos(6)">
+      <input type="button" value="x" onclick="calculadora.multiplicar()">
+      <input type="button" value="÷" onclick="calculadora.dividir()">
+      <input type="button" value="1" onclick="calculadora.digitos(1)">
+      <input type="button" value="2" onclick="calculadora.digitos(2)">
+      <input type="button" value="3" onclick="calculadora.digitos(3)">
+      <input type="button" value="-" onclick="calculadora.restar()">
+      <input type="button" value="+" onclick="calculadora.sumar()">
+      <input type="button" value="0" onclick="calculadora.digitos(0)">
+      <input type="button" value="·" onclick="calculadora.punto()">
+      <input type="button" value="+/-" onclick="calculadora.signo()">
+      <input type="button" value="Enter" onclick="calculadora.enter()">
+    </section>
+  </main>
+  <script src="/sew/Seccion1/Ejercicio-06/CalculadoraRPN.js"></script>
+  <script src="/sew/Seccion1/Ejercicio-06/CalculadoraEspecializada.js"></script>
+</body>
+</html>
