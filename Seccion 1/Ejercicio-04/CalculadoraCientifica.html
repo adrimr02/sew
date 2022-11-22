@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Imitacion de la calculadora científica de Windows 10 hecha con JavaScript vanilla">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <title>Calculadora Cientifica</title>
+  <link rel="stylesheet" href="CalculadoraCientifica.css">
+</head>
+<body>
+  <main>
+    <h1>Calculadora científica</h1>
+    <section>
+      <h2>Pantalla</h2>
+      <label for="operacion">Operacion</label>
+      <input type="text" id="operacion" name="operacion" disabled>
+      <label for="input">Entrada</label>
+      <input type="text" id="input" name="input" disabled>
+      <input type="button" name="rad" value="DEG" onclick="calculadora.rad()">
+      <input type="button" value="HYP" onclick="">
+      <input type="button" value="F-E" onclick="">
+      <input type="button" value="MC" onclick="calculadora.mc()" disabled>
+      <input type="button" value="MR" onclick="calculadora.mr()" disabled>
+      <input type="button" value="M+" onclick="calculadora.mMas()">
+      <input type="button" value="M-" onclick="calculadora.mMenos()">
+      <input type="button" value="MS" onclick="calculadora.ms()">
+    </section>
+    <section>
+      <h2>Funciones</h2>
+      <input type="button" value="x^2" onclick="calculadora.cuadrado()">
+      <input type="button" value="x^y" onclick="calculadora.potencia()">
+      <input type="button" value="sin" name="sin" onclick="calculadora.sin()">
+      <input type="button" value="cos" name="cos" onclick="calculadora.cos()">
+      <input type="button" value="tan" name="tan" onclick="calculadora.tan()">
+      <input type="button" value="√" onclick="calculadora.raiz(7)">
+      <input type="button" value="10^x" onclick="calculadora.base10()">
+      <input type="button" name="log" value="log" onclick="calculadora.log()">
+      <input type="button" value="Exp" onclick="calculadora.exp()">
+      <input type="button" value="Mod" onclick="calculadora.modulo()">
+      <input type="button" value="⇧" onclick="calculadora.shift()">
+      <input type="button" value="CE" onclick="calculadora.borrar()">
+      <input type="button" value="C" onclick="calculadora.reset()">
+      <input type="button" value="DEL" onclick="calculadora.borrarUno()">
+      <input type="button" value="÷" onclick="calculadora.division()">
+
+      <input type="button" value="π" onclick="calculadora.pi()">
+      <input type="button" value="7" onclick="calculadora.digitos(7)">
+      <input type="button" value="8" onclick="calculadora.digitos(8)">
+      <input type="button" value="9" onclick="calculadora.digitos(9)">
+      <input type="button" value="x" onclick="calculadora.multiplicacion()">
+
+      <input type="button" value="n!" onclick="calculadora.factorial()">
+      <input type="button" value="4" onclick="calculadora.digitos(4)">
+      <input type="button" value="5" onclick="calculadora.digitos(5)">
+      <input type="button" value="6" onclick="calculadora.digitos(6)">
+      <input type="button" value="-" onclick="calculadora.resta()">
+      
+      <input type="button" value="+/-" onclick="calculadora.signo()">
+      <input type="button" value="1" onclick="calculadora.digitos(1)">
+      <input type="button" value="2" onclick="calculadora.digitos(2)">
+      <input type="button" value="3" onclick="calculadora.digitos(3)">
+      <input type="button" value="+" onclick="calculadora.suma()">
+      
+      <input type="button" value="(" onclick="calculadora.abreP()">
+      <input type="button" value=")" onclick="calculadora.cierraP()">
+      <input type="button" value="0" onclick="calculadora.digitos(0)">
+      <input type="button" value="·" onclick="calculadora.punto()">
+      <input type="button" value="=" onclick="calculadora.igual()">
+      
+    </section>
+  </main>
+  <script src="CalculadoraMilan.js"></script>
+  <script src="CalculadoraCientifica.js"></script>
+</body>
+</html>

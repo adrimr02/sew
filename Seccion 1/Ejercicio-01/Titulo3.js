@@ -1,0 +1,1 @@
+document.write(`<h3>${informacion.centro}</h3>`)
