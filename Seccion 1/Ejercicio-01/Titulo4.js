@@ -1,1 +1,0 @@
-document.write(`<h4>${informacion.universidad}</h4>`)

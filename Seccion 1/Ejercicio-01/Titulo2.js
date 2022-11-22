@@ -1,1 +1,0 @@
-document.write(`<h2>${informacion.titulacion}</h2>`)

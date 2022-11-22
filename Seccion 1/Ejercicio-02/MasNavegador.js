@@ -1,5 +1,0 @@
-document.write(`<p>Version: ${info.version}</p>`)
-document.write(`<p>Plataforma: ${info.plataforma}</p>`)
-document.write(`<p>Vendedor: ${info.vendedor}</p>`)
-document.write(`<p>Agente: ${info.agente}</p>`)
-document.write(`<p>Java activo: ${info.javaActivo}</p>`)
