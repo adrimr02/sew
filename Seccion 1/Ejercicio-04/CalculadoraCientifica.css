@@ -27,8 +27,11 @@ section {
   padding: 0.5em;
 }
 
-h2 {
+section:first-child h2 {
   grid-area: h;
+}
+
+section:last-child h2 {
   grid-column: span 5;
 }
 
