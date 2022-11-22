@@ -17,6 +17,10 @@ section {
   gap: 0.5em;
 }
 
+h1 {
+  grid-column: span 5;
+}
+
 textarea {
   grid-column: span 5;
   resize: none;
