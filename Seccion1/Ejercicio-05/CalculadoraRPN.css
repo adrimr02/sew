@@ -17,6 +17,11 @@ section {
   gap: 0.5em;
 }
 
+label {
+  grid-column: span 5;
+  text-align: right;
+}
+
 textarea {
   grid-column: span 5;
   resize: none;

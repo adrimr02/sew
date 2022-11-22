@@ -13,10 +13,13 @@
   <main>
     <section>
       <h1>Calculadora Especializada</h1>
-      <input type="text" name="opciones" disabled>
+      <label for="options">Opciones</label>
+      <input type="text" id="options" name="opciones" disabled>
+      <label for="pila">Pila</label>
       <textarea name="pila" id="pila" cols="30" rows="10" readonly></textarea>
+      <label for="input">Entrada</label>
       <input type="button" value="Sym" onclick="calculadora.sym()">
-      <input type="text" name="entrada" disabled>
+      <input type="text" id="input" name="entrada" disabled>
       <input type="button" value="x" onclick="calculadora.x()">
       <input type="button" value="d/dx" onclick="calculadora.derivar()">
       <input type="button" value="∫" onclick="calculadora.integrar()">
