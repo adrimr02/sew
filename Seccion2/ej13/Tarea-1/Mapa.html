@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <meta name="description" content="Ejecicio 13.1 de la practica de Computación en el Cliente">
+  <title>Ejercicio 13</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="MapaKML.css">
+</head>
+<body>
+  <h1>Importar marcadores al mapa</h1>
+  <article>
+    <h2>Importa tus marcadores</h2>
+    <p>
+      <label for="archivo">Elige un kml</label>
+      <input type="file" name="archivo" id="archivo" onchange="reader.readFile(this.files[0])">
+    </p>
+  </article>
+  <main id="map" class="mapboxgl-map"><div class="mapboxgl-canary" style="visibility: hidden;"></div><div class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" role="region" width="1125" height="587" style="width: 900px; height: 469.038px;"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-group"><button class="mapboxgl-ctrl-zoom-in" type="button" aria-label="Zoom in" aria-disabled="false"><span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Zoom in"></span></button><button class="mapboxgl-ctrl-zoom-out" type="button" aria-label="Zoom out" aria-disabled="false"><span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Zoom out"></span></button><button class="mapboxgl-ctrl-compass" type="button" aria-label="Reset bearing to north"><span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Reset bearing to north" style="transform: rotate(0deg);"></span></button></div></div><div class="mapboxgl-ctrl-bottom-left"><div class="mapboxgl-ctrl" style="display: block;"><a class="mapboxgl-ctrl-logo" target="_blank" rel="noopener nofollow" href="https://www.mapbox.com/" aria-label="Mapbox logo"></a></div></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><button class="mapboxgl-ctrl-attrib-button" type="button" aria-label="Toggle attribution"><span class="mapboxgl-ctrl-icon" aria-hidden="true" title="Toggle attribution"></span></button><div class="mapboxgl-ctrl-attrib-inner" role="list"><a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox" role="listitem">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap" role="listitem">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=streets-v11&amp;access_token=pk.eyJ1IjoiYWRyaW0wMiIsImEiOiJjbGI2eHh4dmkwMmZoM29vZnMyNHN2a3hjIn0.v6_8Z5UVa81uaYdR5rLCAQ" target="_blank" aria-label="Map feedback" role="listitem" rel="noopener nofollow">Improve this map</a></div></div></div></div></main>
+  <script src="MapaKML.js"></script>
+
+</body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <meta name="description" content="Ejecicio 11.6 de la practica de Computación en el Cliente">
+  <title>Ejercicio 11</title>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="Ejercicio11.css">
+</head>
+<body>
+  <h1>Hasta donde llegas</h1>
+  <article>
+    <h2>Cómo funciona</h2>
+    <p>
+      Desde tu posición actual o moviendo el marcador, te aparecera en el mapa hasta donde podrías llegar en el tiempo que indiques en el medio de transporte que elijas
+    </p>
+  </article>
+  <aside>
+    <h2>Opciones</h2>
+    <label for="tiempo">Tiempo máximo (0-60 min)</label>
+    <input type="number" name="tiempo" id="tiempo" min="1" max="60" value="10" step="5" onchange="mapa.actualizarDatos()">
+    <label for="medio"></label>
+    <select name="medio" id="medio" onchange="mapa.actualizarDatos()">
+      <option value="walking" selected>A pie</option>
+      <option value="cycling">Bicicleta</option>
+      <option value="driving">Coche</option>
+    </select>
+  </aside>
+  <main id="map"></main>
+  <script src="Ejercicio11.js"></script>
+</body>
+</html>

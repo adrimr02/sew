@@ -1,0 +1,290 @@
+{ "type": "FeatureCollection",
+  "features": [
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Adrian Martinez Rodriguez",
+        "description": "Lugar de nacimiento de Adrian"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Adrian Martinez Rodriguez",
+        "description": "Lugar de nacimiento de Adrian"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Juan Rodriguez",
+        "description": "Lugar de nacimiento de Juan"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [-5,43]
+      },
+      "properties": {
+        "name": "Juan Rodriguez",
+        "description": "Lugar de nacimiento de Juan"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Alberto Garcia",
+        "description": "Lugar de nacimiento de Alberto"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Alberto Garcia",
+        "description": "Lugar de nacimiento de Alberto"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Laura Rodriguez",
+        "description": "Lugar de nacimiento de Laura"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Laura Rodriguez",
+        "description": "Lugar de nacimiento de Laura"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Pedro Rodriguez",
+        "description": "Lugar de nacimiento de Pedro"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Marta Alvarez",
+        "description": "Lugar de nacimiento de Marta"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Marta Alvarez",
+        "description": "Lugar de nacimiento de Marta"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43.5147958,-5.601478]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    },
+    { 
+      "type": "Feature",
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [43,-5]
+      },
+      "properties": {
+        "name": "Paco Suarez",
+        "description": "Lugar de nacimiento de Paco"
+      }
+    }
+  ]
+}

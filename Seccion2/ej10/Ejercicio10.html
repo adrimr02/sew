@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <meta name="description" content="Ejecicio 10 de la practica de Computación en el Cliente">
+  <title>Ejercicio 10</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="Ejercicio10.css">
+</head>
+<body>
+  <h1>Precio del Oro</h1>
+  <main>
+    <section>
+      <h2>Precio actual por gramo</h2>
+      <button onclick="calculator.actualizarPrecios()">Actualizar precios</button>
+      <sub>Actualizar con moderación, limite de 500 consultas mensuales</sub>
+      <table>
+        <thead>
+          <tr>
+            <th>Kilates</th>
+            <th>€/gramos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>24K</td>
+            <td>x€/g</td>
+          </tr>
+          <tr>
+            <td>22K</td>
+            <td>x€/g</td>
+          </tr>
+          <tr>
+            <td>21K</td>
+            <td>x€/g</td>
+          </tr>
+          <tr>
+            <td>20K</td>
+            <td>x€/g</td>
+          </tr>
+          <tr>
+            <td>18K</td>
+            <td>x€/g</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <form>
+        <label for="inputAmount">¿Cuánto oro tienes?</label>
+        <input type="number" id="inputAmount" name="amount" placeholder="Cantidad" min="0">
+        <label for="unit">Unidad</label>
+        <select name="unit" id="unit">
+          <option value="g">Gramos</option>
+          <option value="oz">Onzas</option>
+        </select>
+        <label for="kilates">Kilates</label>
+        <select name="kilates" id="kilates">
+          <option value="24k">24K</option>
+          <option value="22k">22K</option>
+          <option value="21k">21K</option>
+          <option value="20k">20K</option>
+          <option value="18k">18K</option>
+        </select>
+        <input type="button" name="calculate" value="Calcular" onclick="calculator.calcularPrecio()">
+      </form>
+      <h2>Valor</h2>
+      <p>0.0000€</p>
+    </section>
+  </main>
+  <script src="Ejercicio10.js"></script>
+</body>
+</html>

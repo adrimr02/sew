@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>Adrian Martinez Rodriguez</name>
+    <description>Lugar de nacimiento de Adrian</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,30</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Adrian Martinez Rodriguez</name>
+    <description>Lugar de nacimiento de Adrian</description>
+    <Point>
+      <coordinates>43,-5,90</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Juan Rodriguez</name>
+    <description>Lugar de nacimiento de Juan</description>
+    <Point>
+      <coordinates>43,-5,107</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Juan Rodriguez</name>
+    <description>Lugar de nacimiento de Juan</description>
+    <Point>
+      <coordinates>-5,43,88</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alberto Garcia</name>
+    <description>Lugar de nacimiento de Alberto</description>
+    <Point>
+      <coordinates>43,-5,25</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Alberto Garcia</name>
+    <description>Lugar de nacimiento de Alberto</description>
+    <Point>
+      <coordinates>43,-5,23</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,12</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43,-5,37</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Laura Rodriguez</name>
+    <description>Lugar de nacimiento de Laura</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,12</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Laura Rodriguez</name>
+    <description>Lugar de nacimiento de Laura</description>
+    <Point>
+      <coordinates>43,-5,30</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,24</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43,-5,45</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,21</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43,-5,52</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,18</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43,-5,49</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,23</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pedro Rodriguez</name>
+    <description>Lugar de nacimiento de Pedro</description>
+    <Point>
+      <coordinates>43,-5,54</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marta Alvarez</name>
+    <description>Lugar de nacimiento de Marta</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,10</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Marta Alvarez</name>
+    <description>Lugar de nacimiento de Marta</description>
+    <Point>
+      <coordinates>43,-5,43</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,21</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43,-5,64</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,9</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43,-5,60</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43.5147958,-5.601478,9</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Paco Suarez</name>
+    <description>Lugar de nacimiento de Paco</description>
+    <Point>
+      <coordinates>43,-5,50</coordinates>
+    </Point>
+  </Placemark>
+</kml>
+  

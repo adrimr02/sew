@@ -1,0 +1,17 @@
+body {
+  font-size: 1.3rem;
+}
+
+main {
+  width: 90vw;
+  height: 65vh;
+  border-radius: 1.5em;
+}
+
+p {
+  display: flex;
+  flex-direction: column  ;
+}
+pre {
+  overflow: auto;
+}

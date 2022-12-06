@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <meta name="description" content="Ejecicio 13.1 de la practica de Computación en el Cliente">
+  <title>Ejercicio 13</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'>
+  <link rel="stylesheet" href="MapaKML.css">
+</head>
+
+<body>
+  <h1>Importar marcadores al mapa</h1>
+  <article>
+    <h2>Importa tus marcadores</h2>
+    <p>
+      <label for="archivo">Elige un kml</label>
+      <input type="file" name="archivo" id="archivo" onchange="reader.readFile(this.files[0])" disabled>
+    </p>
+  </article>
+  <main id="map"></main>
+  <script src="MapaKML.js"></script>
+</body>
+
+</html>

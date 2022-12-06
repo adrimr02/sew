@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <meta name="description" content="Ejecicio 7 de la practica de Computación en el Cliente">
+  <link rel="stylesheet" href="Ejercicio7.css">
+
+  <title>Ejercicio 7</title>
+</head>
+<body>
+  <main>
+    <h1>Ejercicio 7</h1>
+    <section>
+      <h2>Controles</h2>
+      <button name="ocultaParrafos" onclick="manipulador.ocultarMostrarParrafos()">Ocultar parrafos</button>
+      <button onclick="manipulador.mostrarElementos()">Muestra informacion de los elementos</button>
+
+    </section>
+    <section>
+      <h2>Apartado 1</h2>
+      <p>
+        Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán.
+      </p>
+      <h2>Apartado 2</h2>
+      <p>
+        Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas.
+      </p>
+      <section>
+        <h3>Apartado 2.1</h3>
+        <p>
+          Reina en mi espíritu una alegría admirable, muy parecida a las dulces alboradas de la primavera, de que gozo aquí con delicia. Estoy solo, y me felicito de vivir en este país, el más a propósito para almas como la mía, soy tan dichoso, mi querido amigo, me sojuzga de tal modo la idea de reposar, que no me ocupo
+        </p>
+      </section>
+      <section>
+        <h3>Apartado 2.2</h3>
+        <p>
+          Una mañana, tras un sueño intranquilo, Gregorio Samsa se despertó convertido en un monstruoso insecto. Estaba echado de espaldas sobre un duro caparazón y, al alzar la cabeza, vio su vientre convexo y oscuro, surcado por curvadas callosidades.
+        </p>
+      </section>
+    </section>
+    <section>
+      <h2>Comentarios</h2>
+      <ul>
+
+      </ul>
+      <button onclick="manipulador.eliminarComentarios()">Borrar comentarios</button>
+      <section>
+        <h3>Añade un comentario</h3>
+        <form>
+          <label for="comment">Nuevo comentario</label>
+          <textarea id="comment" name="comment"></textarea>
+          <input type="button" value="Añadir" onclick="manipulador.comentar()">
+        </form>
+      </section>
+    </section>
+    <section>
+      <h2>Tabla 1</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Comunidad Autonoma</th>
+            <th>0-15</th>
+            <th>16-64</th>
+            <th>65 y más</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Andalucia</th>
+            <td>1376801</td>
+            <td>5600213</td>
+            <td>1495393</td>
+          </tr>
+          <tr>
+            <th>Aragón</th>
+            <td>193938</td>
+            <td>842720</td>
+            <td>289603</td>
+          </tr>
+          <tr>
+            <th>Asturias</th>
+            <td>115112</td>
+            <td>627841</td>
+            <td>268839</td>
+          </tr>
+          <tr>
+            <th>Baleares</th>
+            <td>183014</td>
+            <td>802632</td>
+            <td>187362</td>
+          </tr>
+          <tr>
+            <th>Canarias</th>
+            <td>295212</td>
+            <td>1516473</td>
+            <td>361259</td>
+          </tr>
+          <tr>
+            <th>Cantabria</th>
+            <td>79966</td>
+            <td>372525</td>
+            <td>132016</td>
+          </tr>
+          <tr>
+            <th>Castilla y León</th>
+            <td>297020</td>
+            <td>1472608</td>
+            <td>613511</td>
+          </tr>
+          <tr>
+            <th>Castilla la Mancha</th>
+            <td>321694</td>
+            <td>1338046</td>
+            <td>389822</td>
+          </tr>
+          <tr>
+            <th>Cataluña</th>
+            <td>1223179</td>
+            <td>5061512</td>
+            <td>1478671</td>
+          </tr>
+          <tr>
+            <th>Comunidad Valenciana</th>
+            <td>772819</td>
+            <td>3289261</td>
+            <td>996058</td>
+          </tr>
+          <tr>
+            <th>Extremadura</th>
+            <td>150078</td>
+            <td>685088</td>
+            <td>224335</td>
+          </tr>
+          <tr>
+            <th>Galicia</th>
+            <td>333678</td>
+            <td>1667827</td>
+            <td>694140</td>
+          </tr>
+          <tr>
+            <th>Comunidad de Madrid</th>
+            <td>1061290</td>
+            <td>4476865</td>
+            <td>1213096</td>
+          </tr>
+          <tr>
+            <th>Murcia</th>
+            <td>270636</td>
+            <td>1005539</td>
+            <td>242311</td>
+          </tr>
+          <tr>
+            <th>Navarra</th>
+            <td>106792</td>
+            <td>422804</td>
+            <td>131941</td>
+          </tr>
+          <tr>
+            <th>País Vasco</th>
+            <td>315998</td>
+            <td>1392990</td>
+            <td>505005</td>
+          </tr>
+          <tr>
+            <th>La Rioja</th>
+            <td>48444</td>
+            <td>203516</td>
+            <td>67836</td>
+          </tr>
+          <tr>
+            <th>Ceuta</th>
+            <td>17307</td>
+            <td>55898</td>
+            <td>10312</td>
+          </tr>
+          <tr>
+            <th>Melilla</th>
+            <td>20395</td>
+            <td>56548</td>
+            <td>9318</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="manipulador.sumarTabla()">Calcular poblacion total</button>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="Ejercicio7.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adrian Martinez Rodriguez">
+  <meta name="description" content="Ejecicio 13.2 de la practica de Computación en el Cliente">
+  <title>Ejercicio 14</title>
+  <link rel="stylesheet" href="Ejercicio14.css">
+</head>
+<body>
+  <h1>Reproductor de música</h1>
+  <main>
+    <section>
+      <h2>Controles</h2>
+      <button name="play" disabled>Reproducir</button>
+      <button name="pause" disabled>Pausar</button>
+      <button name="restart" disabled>Reiniciar</button>
+      <p>
+        <label for="timeline">Linea de tiempo</label>
+        <span>0.00</span>
+        <input type="range" id="timeline" name="timeline" min="0" max="100" value="0" disabled>
+        <span>0.00</span>
+      </p>
+      <p>
+        <label for="volume">Volumen</label>
+        <input type="range" id="volume" list="vol-list" name="volume" min="0" max="2" step="0.01" value="1" disabled>
+        <span>50%</span>
+        <datalist id="vol-list">
+          <option value="1" label="Normal">
+        </datalist>
+      </p>  
+      <p>
+        <label for="panning">Panning (Recomendado uso de auriculares)</label>
+        <input type="range" id="panning" list="pan-list" name="panning" min="-1" max="1" step="0.01" value="0" disabled>
+        <datalist id="pan-list">
+          <option value="-1" label="Izda">
+          <option value="0" label="Centro">
+          <option value="1" label="Dcha">
+        </datalist>
+      </p>
+      <audio>
+        <source src="#">
+      </audio>
+    </section>
+    <section ondrop="fileReader.dropEvent(event)" ondragover="fileReader.dragOverEvent(event)">
+     <h2>Carga un archivo</h2>
+      <p>
+        <label for="file">Selecciona un archivo de audio o arrastralo hasta aquí</label>
+        <input type="file" name="file" id="file" accept="audio/*" onchange="fileReader.readFile(this.files[0])">
+      </p>
+    </section>
+  </main>
+  <aside>
+    <h2>Instrucciones</h2>
+    <ol>
+      <li>Seleccione un archivo de audio ya sea mediante el botón o arrastrandolo y soltando sobre el rectángulo azul</li>
+      <li>Pulse el boton de reproducir o la tecla k</li>
+      <li>Ajuste el volumen o el panning moviendo los desplazadores</li>
+      <li>Pause pulsando el boton o la tecla k de nuevo, o avance o retroceda el audio moviendo la barra de tiempo o con las teclas l y j para avanzar o retroceder 5 segundos respectivamente</li>
+      <li>Si desea volver a reproducir el audio desde el principio pulse reiniciar o la tecla r</li>
+    </ol>
+  </aside>
+  <script src="Ejercicio14.js"></script>
+</body>
+</html>

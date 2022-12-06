@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adrian Martinez Rodriguez">
+    <meta name="description" content="Ejecicio 12 de la practica de Computación en el Cliente">
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="Ejercicio12.css">
+  </head>
+  <body>
+    <h1>Leer archivos del cliente</h1>
+    <main>
+      <p>
+        <label for="archivo">Elige un archivo</label>
+        <input type="file" name="archivo" id="archivo" onchange="reader.readFile(this.files[0])">
+      </p>
+    <section><h2>Información sobre el archivo:</h2><p>Nombre: ejemplo.json</p><p>Tamaño: 947 bytes</p><p>Última modificación: Tue Dec 06 2022 20:21:42 GMT+0100 (hora estándar de Europa central)</p><p>Tipo: application/json</p><p>Contenido del fichero:</p><pre><code>{
+      "quiz": {
+          "sport": {
+              "q1": {
+                  "question": "Which one is correct team name in NBA?",
+                  "options": [
+                      "New York Bulls",
+                      "Los Angeles Kings",
+                      "Golden State Warriros",
+                      "Huston Rocket"
+                  ],
+                  "answer": "Huston Rocket"
+              }
+          },
+          "maths": {
+              "q1": {
+                  "question": "5 + 7 = ?",
+                  "options": [
+                      "10",
+                      "11",
+                      "12",
+                      "13"
+                  ],
+                  "answer": "12"
+              },
+              "q2": {
+                  "question": "12 - 8 = ?",
+                  "options": [
+                      "1",
+                      "2",
+                      "3",
+                      "4"
+                  ],
+                  "answer": "4"
+              }
+          }
+      }
+  }</code></pre></section></main>
+    <script src="Ejercicio12.js"></script>
+  
+  </body></html>

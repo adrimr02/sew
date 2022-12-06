@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:first-child {
+  margin: 1em;
+}
+
+main > section:nth-child(2) {
+  background-color: #d2f2ff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  padding: 0.5em;
+  border: #777 dashed 0.1em;
+}
+
+
+main > section:nth-child(2) p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+main > section p {
+  display: flex;
+}
+main > section:first-child p {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 0.2fr 2fr 0.2fr;
+}
+p > label {
+  grid-column: span 3;
+}

@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+main {
+  border-radius: 1.5em;
+  min-width: 80vw;
+  height: 60vh;
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    width: 90vw;
+    min-height: 70vh;
+  }
+}

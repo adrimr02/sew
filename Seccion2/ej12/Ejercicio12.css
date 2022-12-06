@@ -1,0 +1,11 @@
+body {
+  font-size: 1.3rem;
+}
+
+p {
+  display: flex;
+  flex-direction: column  ;
+}
+pre {
+  overflow: auto;
+}

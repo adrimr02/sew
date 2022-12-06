@@ -1,0 +1,46 @@
+main {
+  padding: 0.5em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 0.1em solid #c0bfbf;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  grid-column: span 3;
+}
+
+section > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: none;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+img {
+  width: 1.2em;
+}
+
+button {
+    font-size: 1.3em;
+    border-radius: 0.3em;
+    margin: 1em;
+    border: 0.05em solid #c0bfbf;
+}
+
+button:hover:not(:disabled) {
+  background-color: #dcdcdc;
+  color: black;
+}
