@@ -1,4 +1,3 @@
-
 class AudioManager {
   constructor() {
     this.audioElement = document.querySelector('audio')
@@ -43,7 +42,7 @@ class AudioManager {
       this.track = new MediaElementAudioSourceNode(this.audioContext, {
         mediaElement: this.audioElement
       })
-  
+
       this.track.connect(this.volumeNode).connect(this.panNode).connect(this.audioContext.destination)
     }
   }
@@ -64,6 +63,8 @@ class AudioManager {
   }
 
 }
+
+
 
 class AudioControls {
   constructor(audioElement) {
@@ -146,10 +147,10 @@ class AudioControls {
     this.currentTime.innerText = this.#parseTime(this.timeLine.value)
     if (!this.audioElement.paused) {
       // Impide que la barra de tiempo se actualice cuando el usuario la mueve si el audio se está reproduciendo
-      cancelAnimationFrame(this.raf) 
+      cancelAnimationFrame(this.raf)
     }
   }
-  
+
   changeTime() {
     this.audioElement.currentTime = this.timeLine.value
     if (!this.audioElement.paused) {
@@ -173,14 +174,14 @@ class AudioControls {
         case 'J':
           if (this.audioElement.currentTime >= 5)
             this.audioElement.currentTime -= 5
-          else 
+          else
             this.audioElement.currentTime = 0
           break;
         case 'l':
         case 'L':
           if (this.audioElement.currentTime <= this.audioElement.duration + 5)
             this.audioElement.currentTime += 5
-          else 
+          else
             this.audioElement.currentTime = this.audioElement.duration
           break;
         case 'r':
@@ -203,17 +204,27 @@ class LocalFileReader {
     if (window.File)
       document.querySelector('input[type=file]').disabled = false
     else
-      document.querySelector('main').innerHTML(`<p>Este navegador no soporta la API File de HTML5 por lo que la aplicacion no funcionará correctametne</p>`)
+      document.querySelector('main').innerHTML = `<p>Este navegador no soporta la API File de HTML5 por lo que la aplicacion no podrá funcionar</p>`
   }
 
-  readFile(file) { 
-    if (file) 
+  readFile(file) {
+    if (file) {
       if (file.type.match('audio/*')) {
+        let error = document.querySelector('main > p')
+        if (error) {
+          error.remove()
+        }
         audioManager.loadAudio(URL.createObjectURL(file))
       }
       else {
-        output.innerHTML += `<p>Solo se permiten archivos de audio</p>`
+        let error = document.querySelector('main > p')
+        if (!error) {
+          error = document.createElement('p')
+          document.querySelector('main').append(error)
+        }
+        error.innerText = `Solo se permiten archivos de audio`
       }
+    }
   }
 
   dropEvent(e) {
@@ -223,20 +234,38 @@ class LocalFileReader {
         if (item.kind === 'file') {
           const file = item.getAsFile();
           if (file.type.match('audio/*')) {
+            let error = document.querySelector('main > p')
+            if (error) {
+              error.remove()
+            }
             audioManager.loadAudio(URL.createObjectURL(file))
           }
           else {
-            output.innerHTML += `<p>Solo se permiten archivos de audio</p>`
+            let error = document.querySelector('main > p')
+            if (!error) {
+              error = document.createElement('p')
+              document.querySelector('main').append(error)
+            }
+            error.innerText = `Solo se permiten archivos de audio`
           }
         }
       });
     } else {
       [...e.dataTransfer.files].forEach((file) => {
         if (file.type.match('audio/*')) {
+          let error = document.querySelector('main > p')
+          if (error) {
+            error.remove()
+          }
           audioManager.loadAudio(URL.createObjectURL(file))
         }
         else {
-          output.innerHTML += `<p>Solo se permiten archivos de audio</p>`
+          let error = document.querySelector('main > p')
+          if (!error) {
+            error = document.createElement('p')
+            document.querySelector('main').append(error)
+          }
+          error.innerText = `Solo se permiten archivos de audio`
         }
       });
     }
@@ -245,8 +274,10 @@ class LocalFileReader {
   dragOverEvent(e) {
     e.preventDefault()
   }
-
 }
+
+
+
 
 const fileReader = new LocalFileReader()
 const audioManager = new AudioManager();

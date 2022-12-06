@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,34 +13,34 @@
   <main>
     <section>
       <h2>Controles</h2>
-      <button name="play" disabled>Reproducir</button>
-      <button name="pause" disabled>Pausar</button>
-      <button name="restart" disabled>Reiniciar</button>
+      <button name="play">Reproducir</button>
+      <button name="pause" disabled="">Pausar</button>
+      <button name="restart" disabled="">Reiniciar</button>
       <p>
         <label for="timeline">Linea de tiempo</label>
-        <span>0.00</span>
-        <input type="range" id="timeline" name="timeline" min="0" max="100" value="0" disabled>
-        <span>0.00</span>
+        <span>0:00</span>
+        <input type="range" id="timeline" name="timeline" min="0" max="27" value="0">
+        <span>0:27</span>
       </p>
       <p>
         <label for="volume">Volumen</label>
-        <input type="range" id="volume" list="vol-list" name="volume" min="0" max="2" step="0.01" value="1" disabled>
+        <input type="range" id="volume" list="vol-list" name="volume" min="0" max="2" step="0.01" value="1">
         <span>50%</span>
         <datalist id="vol-list">
           <option value="1" label="Normal">
-        </datalist>
+        </option></datalist>
       </p>  
       <p>
         <label for="panning">Panning (Recomendado uso de auriculares)</label>
-        <input type="range" id="panning" list="pan-list" name="panning" min="-1" max="1" step="0.01" value="0" disabled>
+        <input type="range" id="panning" list="pan-list" name="panning" min="-1" max="1" step="0.01" value="0">
         <datalist id="pan-list">
           <option value="-1" label="Izda">
-          <option value="0" label="Centro">
-          <option value="1" label="Dcha">
-        </datalist>
+          </option><option value="0" label="Centro">
+          </option><option value="1" label="Dcha">
+        </option></datalist>
       </p>
       <audio>
-        <source src="#">
+        <source src="blob:https://localhost/af356340-7704-4528-8a98-d607cdb23326">
       </audio>
     </section>
     <section ondrop="fileReader.dropEvent(event)" ondragover="fileReader.dragOverEvent(event)">
@@ -64,5 +63,5 @@
     </ol>
   </aside>
   <script src="Ejercicio14.js"></script>
-</body>
-</html>
+
+</body></html>
