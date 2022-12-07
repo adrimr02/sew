@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Adrian Martinez Rodriguez">
   <meta name="description" content="Ejecicio 7 de la practica de Computación en el Cliente">
-  <link rel="stylesheet" href="Ejercicio7.css">
-
   <title>Ejercicio 7</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="Ejercicio7.css">
 </head>
 <body>
   <main>
@@ -61,133 +61,132 @@
       <table>
         <thead>
           <tr>
-            <th>Comunidad Autonoma</th>
-            <th>0-15</th>
-            <th>16-64</th>
-            <th>65 y más</th>
+            <th scope="col" id="ca">Comunidad Autonoma</th>
+            <th scope="col" id="joven">0-15</th>
+            <th scope="col" id="adulto">16-64</th>
+            <th scope="col" id="jubilado">65 y más</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>Andalucia</th>
-            <td>1376801</td>
-            <td>5600213</td>
-            <td>1495393</td>
+            <th scope="row" id="an" headers="ca">Andalucia</th>
+            <td headers="an joven">1376801</td>
+            <td headers="an adulto">5600213</td>
+            <td headers="an jubilado">1495393</td>
           </tr>
           <tr>
-            <th>Aragón</th>
-            <td>193938</td>
-            <td>842720</td>
-            <td>289603</td>
+            <th scope="row" id="ar" headers="ca">Aragón</th>
+            <td headers="ar joven">193938</td>
+            <td headers="ar adulto">842720</td>
+            <td headers="ar jubilado">289603</td>
           </tr>
           <tr>
-            <th>Asturias</th>
-            <td>115112</td>
-            <td>627841</td>
-            <td>268839</td>
+            <th scope="row" id="as" headers="ca">Asturias</th>
+            <td headers="as joven">115112</td>
+            <td headers="as adulto">627841</td>
+            <td headers="as jubilado">268839</td>
           </tr>
           <tr>
-            <th>Baleares</th>
-            <td>183014</td>
-            <td>802632</td>
-            <td>187362</td>
+            <th scope="row" id="ba" headers="ca">Baleares</th>
+            <td headers="ba joven">183014</td>
+            <td headers="ba adulto">802632</td>
+            <td headers="ba jubilado">187362</td>
           </tr>
           <tr>
-            <th>Canarias</th>
-            <td>295212</td>
-            <td>1516473</td>
-            <td>361259</td>
+            <th scope="row" id="can" headers="ca">Canarias</th>
+            <td headers="can joven">295212</td>
+            <td headers="can adulto">1516473</td>
+            <td headers="can jubilado">361259</td>
           </tr>
           <tr>
-            <th>Cantabria</th>
-            <td>79966</td>
-            <td>372525</td>
-            <td>132016</td>
+            <th scope="row" id="ct" headers="ca">Cantabria</th>
+            <td headers="ct joven">79966</td>
+            <td headers="ct adulto">372525</td>
+            <td headers="ct jubilado">132016</td>
           </tr>
           <tr>
-            <th>Castilla y León</th>
-            <td>297020</td>
-            <td>1472608</td>
-            <td>613511</td>
+            <th scope="row" id="cl" headers="ca">Castilla y León</th>
+            <td headers="cl joven">297020</td>
+            <td headers="cl adulto">1472608</td>
+            <td headers="cl jubilado">613511</td>
           </tr>
           <tr>
-            <th>Castilla la Mancha</th>
-            <td>321694</td>
-            <td>1338046</td>
-            <td>389822</td>
+            <th scope="row" id="cm" headers="ca">Castilla la Mancha</th>
+            <td headers="cm joven">321694</td>
+            <td headers="cm adulto">1338046</td>
+            <td headers="cm jubilado">389822</td>
           </tr>
           <tr>
-            <th>Cataluña</th>
-            <td>1223179</td>
-            <td>5061512</td>
-            <td>1478671</td>
+            <th scope="row" id="cat" headers="ca">Cataluña</th>
+            <td headers="cat joven">1223179</td>
+            <td headers="cat adulto">5061512</td>
+            <td headers="cat jubilado">1478671</td>
           </tr>
           <tr>
-            <th>Comunidad Valenciana</th>
-            <td>772819</td>
-            <td>3289261</td>
-            <td>996058</td>
+            <th scope="row" id="cv" headers="ca">Comunidad Valenciana</th>
+            <td headers="cv joven">772819</td>
+            <td headers="cv adulto">3289261</td>
+            <td headers="cv jubilado">996058</td>
           </tr>
           <tr>
-            <th>Extremadura</th>
-            <td>150078</td>
-            <td>685088</td>
-            <td>224335</td>
+            <th scope="row" id="ex" headers="ca">Extremadura</th>
+            <td headers="ex joven">150078</td>
+            <td headers="ex adulto">685088</td>
+            <td headers="ex jubilado">224335</td>
           </tr>
           <tr>
-            <th>Galicia</th>
-            <td>333678</td>
-            <td>1667827</td>
-            <td>694140</td>
+            <th scope="row" id="ga" headers="ca">Galicia</th>
+            <td headers="ga joven">333678</td>
+            <td headers="ga adulto">1667827</td>
+            <td headers="ga jubilado">694140</td>
           </tr>
           <tr>
-            <th>Comunidad de Madrid</th>
-            <td>1061290</td>
-            <td>4476865</td>
-            <td>1213096</td>
+            <th scope="row" id="mad" headers="ca">Comunidad de Madrid</th>
+            <td headers="mad joven">1061290</td>
+            <td headers="mad adulto">4476865</td>
+            <td headers="mad jubilado">1213096</td>
           </tr>
           <tr>
-            <th>Murcia</th>
-            <td>270636</td>
-            <td>1005539</td>
-            <td>242311</td>
+            <th scope="row" id="mu" headers="ca">Murcia</th>
+            <td headers="mu joven">270636</td>
+            <td headers="mu adulto">1005539</td>
+            <td headers="mu jubilado">242311</td>
           </tr>
           <tr>
-            <th>Navarra</th>
-            <td>106792</td>
-            <td>422804</td>
-            <td>131941</td>
+            <th scope="row" id="na" headers="ca">Navarra</th>
+            <td headers="na joven">106792</td>
+            <td headers="na adulto">422804</td>
+            <td headers="na jubilado">131941</td>
           </tr>
           <tr>
-            <th>País Vasco</th>
-            <td>315998</td>
-            <td>1392990</td>
-            <td>505005</td>
+            <th scope="row" id="pv" headers="ca">País Vasco</th>
+            <td headers="pv joven">315998</td>
+            <td headers="pv adulto">1392990</td>
+            <td headers="pv jubilado">505005</td>
           </tr>
           <tr>
-            <th>La Rioja</th>
-            <td>48444</td>
-            <td>203516</td>
-            <td>67836</td>
+            <th scope="row" id="ri" headers="ca">La Rioja</th>
+            <td headers="ri joven">48444</td>
+            <td headers="ri adulto">203516</td>
+            <td headers="ri jubilado">67836</td>
           </tr>
           <tr>
-            <th>Ceuta</th>
-            <td>17307</td>
-            <td>55898</td>
-            <td>10312</td>
+            <th scope="row" id="ce" headers="ca">Ceuta</th>
+            <td headers="ce joven">17307</td>
+            <td headers="ce adulto">55898</td>
+            <td headers="ce jubilado">10312</td>
           </tr>
           <tr>
-            <th>Melilla</th>
-            <td>20395</td>
-            <td>56548</td>
-            <td>9318</td>
+            <th scope="row" id="me" headers="ca">Melilla</th>
+            <td headers="me joven">20395</td>
+            <td headers="me adulto">56548</td>
+            <td headers="me jubilado">9318</td>
           </tr>
         </tbody>
       </table>
       <button onclick="manipulador.sumarTabla()">Calcular poblacion total</button>
     </section>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="Ejercicio7.js"></script>
 </body>
 </html>
